@@ -1,6 +1,6 @@
 Feature: Google Searching
   As a web surfer,
-  I want to search Google,
+  I want to search Google for panda,
   So that I can learn new things.
 
   @automated @web @google @panda
