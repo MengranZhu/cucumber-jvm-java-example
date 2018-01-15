@@ -33,4 +33,12 @@ public class GooglePage extends AbstractPandaPage {
             return false;
         }
     }
+
+    public boolean urlContain(String phrase) {
+        try {
+            return driverWait(5).until(ExpectedConditions.urlContains(phrase));
+        } catch (TimeoutException ex) {
+            return false;
+        }
+    }
 }

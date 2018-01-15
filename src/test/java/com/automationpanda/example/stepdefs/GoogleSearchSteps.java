@@ -39,6 +39,7 @@ public class GoogleSearchSteps {
     @Then("^results for \"([^\"]*)\" are shown$")
     public void resultsForAreShown(String phrase) throws Throwable {
         assertThat(googlePage.pageTitleContains(phrase)).isTrue();
+        assertThat(googlePage.urlContain(phrase)).isTrue();
     }
 
     @After(value = "@web")
