@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class GooglePage extends AbstractPandaPage {
 
     private static final String GOOGLE_HOME_URL = "https://www.google.com/";
+    private static final String GOOGLE_IMAGE_URL = "https://www.google.com/imghp?hl=en&tab=wi";
     private static final By BY_SEARCH_FIELD = By.name("q");
 
     public GooglePage(WebDriver driver) {
@@ -18,6 +19,10 @@ public class GooglePage extends AbstractPandaPage {
 
     public void navigateToHomePage() {
         getDriver().navigate().to(GOOGLE_HOME_URL);
+    }
+
+    public void navigateToImageSearchPage() {
+        getDriver().navigate().to(GOOGLE_IMAGE_URL);
     }
 
     public void enterSearchPhrase(String phrase) {

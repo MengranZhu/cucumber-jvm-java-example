@@ -31,6 +31,11 @@ public class GoogleSearchSteps {
         googlePage.navigateToHomePage();
     }
 
+    @Given("^a web brower is on the Google Image page$")
+    public void aWebBrowerIsOnTheGoogleImagePage() throws Throwable {
+        googlePage.navigateToImageSearchPage();
+    }
+
     @When("^the search phrase \"([^\"]*)\" is entered$")
     public void theSearchPhraseIsEntered(String phrase) throws Throwable {
         googlePage.enterSearchPhrase(phrase);
