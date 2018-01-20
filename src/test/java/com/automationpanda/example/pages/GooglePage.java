@@ -39,7 +39,7 @@ public class GooglePage extends AbstractPandaPage {
         }
     }
 
-    public boolean urlContain(String phrase) {
+    public boolean pageUrlContain(String phrase) {
         try {
             return driverWait(5).until(ExpectedConditions.urlContains(phrase));
         } catch (TimeoutException ex) {

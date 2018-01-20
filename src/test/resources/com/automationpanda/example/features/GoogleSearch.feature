@@ -9,8 +9,8 @@ Feature: Google Searching
     When the search phrase "panda" is entered
     Then results for "panda" are shown
 
-  @auomated @web @google @panda
+  @automated @web @google @panda
   Scenario: Google Image Search
-    Given a web brower is on the Google Image page
+    Given a web browser is on the Google Image page
     When the search phrase "panda" is entered
     Then results for "panda" are shown
