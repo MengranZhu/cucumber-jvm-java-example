@@ -31,7 +31,7 @@ public class GoogleSearchSteps {
         googlePage.navigateToHomePage();
     }
 
-    @Given("^a web brower is on the Google Image page$")
+    @Given("^a web browser is on the Google Image page$")
     public void aWebBrowerIsOnTheGoogleImagePage() throws Throwable {
         googlePage.navigateToImageSearchPage();
     }
